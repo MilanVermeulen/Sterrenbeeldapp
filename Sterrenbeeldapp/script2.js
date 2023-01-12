@@ -1,25 +1,13 @@
-//attach submit button to variable
-let submit = document.getElementById('myButton');
-//assign event to submit button 
-submit.addEventListener('click', () => {
-
-    let fname = document.getElementById('fname').value;
-    let lname = document.getElementById('lname').value;
-    let birthday = document.getElementById('birthday').value;
-    
- console.log(data);
-    
- // parse data to localstorage
- 
-
-//create submitobject
-    let submitobject = {
-        fname: fname,
-        lname: lname,
-        birthday: birthday
-    };
-    //send data to server
-    localStorage.setItem('submitObject', JSON.stringify(submitobject));
-    //redirect to overeenkomst.html
-    window.location.href = 'indexpage2.html';
+document.getElementById("submit").addEventListener('click', function () {
+    setInput();
 })
+function setInput() {
+    let name = document.getElementById("name").value;
+    let birthday= document.getElementById("birthday").value;
+    let month = document.getElementById("birthmonth").value;
+    console.log(name, birthday, month);
+    sessionStorage.setItem('name', name);
+    sessionStorage.setItem('birthday', birthday);
+    sessionStorage.setItem('month', month);
+    window.location.href = 'indexpage2.html';
+}

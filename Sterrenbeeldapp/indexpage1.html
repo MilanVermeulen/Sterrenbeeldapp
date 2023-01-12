@@ -9,42 +9,44 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 </head>
-<body>
-    <div class="container">
-        <div class="row margin text-center">
+<body class="background">
+    <div class="container backdrop">
+        <div class="row margin banner text-center">
             <div class="col">
-                <h1>Star sign application</h1>
+                <h1 class="white">Star sign application</h1>
             </div>
         </div>
         <div class="row margin">
             <div class="col-md-4 text-center">
-                <h3>Name?</h3>
+                <h3 class="white">Name?</h3>
             </div>
             <div class="col-md-4 text-center">
-                <h3>Lastname?</h3>
+                <h3 class="white">what day where you born?</h3>
             </div>
             <div class="col-md-4 text-center">
-                <h3>what year were you born?</h3>
+                <h3 class="white">what month were you born?</h3>
             </div>
         </div>
         <div class="row margin">
             <div class="col-md-4 text-center">
-                <input type="text" id="fname">
+                <label for="name">Name?</label>
+                <input type="text" id="name">
             </div>
             <div class="col-md-4 text-center">
-                <input type="text" id="lname">
+                <label for="birthday">day you were born?</label>
+                <input type="number" min="1" max="31" id="birthday">
             </div>
             <div class="col-md-4 text-center">
-                <input type="date" id="birthday">
+                <label for="birthmonth">month</label>
+                <input type="text" id="birtmonth">
             </div>
         </div>
         <div class="row margin">
-            <div class="col">
-                <button class="buttonstyle" type="submit" id="myButton"></button>
+            <div class="col text-center">
+                <button class="buttonstyle" type="submit" id="submit">Get your Star sign</button>
             </div>
         </div>
     </div>
-    <script src="scriptp1.js"></script>
     <script src="script2.js"></script>
 </body>
 </html>
