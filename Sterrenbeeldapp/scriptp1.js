@@ -20,6 +20,7 @@ if (year == "january" && day >= "20" || year == "february" && day <= 18 || year 
   document.getElementById("zodiacSignImg").src="images/aquarius.png";
   document.getElementById("characteristic").innerHTML="Deep, imaginative, original & uncompromising.";
   }
+  
 //PISCES
 if (year == "february" && day >= "20" || year == "march" && day <= 18 || year == "februari" && day >= 19 || year == "maart" && day <= 20){
   result = ("Pisces");
