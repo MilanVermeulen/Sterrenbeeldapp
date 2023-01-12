@@ -6,19 +6,21 @@ fetch("https://cataas.com/cat?json=true").then(
   ).then(data => {
     console.log(data);
     document.getElementById("catImage").src = catURL + data.url;
-  })
-
+  });
+  
   function getZodiac(){
     //GET DATE
     var customerDate = document.getElementById('birthday').value;
     var dateOfBirth = new Date(customerDate);
     var birthmonth = dateOfBirth.getMonth()+1;
     var birthday = dateOfBirth.getDate();
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
   
     console.log(customerDate);
     console.log(dateOfBirth);
     console.log(birthday,birthmonth);
-    console.log(document.getElementById('user_birth'));
+    console.log(document.getElementById('birthday'));
   
     //INVALID DATE
     var sign = " unknown because you didn't put a valid date.";
@@ -99,5 +101,6 @@ fetch("https://cataas.com/cat?json=true").then(
       alert("Please enter an accurate date ! ");
     }
     //OUTPUT
+    document.getElementById("name").innerHTML= fname, lname;
     document.getElementById("output").innerHTML= result;
   }
