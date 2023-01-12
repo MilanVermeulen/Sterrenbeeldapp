@@ -14,8 +14,11 @@ fetch("https://cataas.com/cat?json=true").then(
     var dateOfBirth = new Date(customerDate);
     var birthmonth = dateOfBirth.getMonth()+1;
     var birthday = dateOfBirth.getDate();
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
+    // Get data from local storage
+      var data = localStorage.getItem("name");
+
+    // Log the data
+      console.log(data);
   
     console.log(customerDate);
     console.log(dateOfBirth);
@@ -101,6 +104,9 @@ fetch("https://cataas.com/cat?json=true").then(
       alert("Please enter an accurate date ! ");
     }
     //OUTPUT
+    
     document.getElementById("name").innerHTML= fname, lname;
     document.getElementById("output").innerHTML= result;
   }
+
+  

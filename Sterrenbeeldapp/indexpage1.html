@@ -10,20 +10,40 @@
 
 </head>
 <body>
-    <div class="inputName">
-        <div id="buttonInput">
-            <form>
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname">
-                <label for="birthday">Birthday:</label>
-                <input type="date" id="birthday" name="birthday">
-                <input type="button" value="Submit" id="myButton" onclick="window.location.href='indexPage2.html'" />
-              </form> 
+    <div class="container">
+        <div class="row margin text-center">
+            <div class="col">
+                <h1>Star sign application</h1>
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="col-md-4 text-center">
+                <h3>Name?</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>Lastname?</h3>
+            </div>
+            <div class="col-md-4 text-center">
+                <h3>what year were you born?</h3>
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="col-md-4 text-center">
+                <input type="text" id="fname">
+            </div>
+            <div class="col-md-4 text-center">
+                <input type="text" id="lname">
+            </div>
+            <div class="col-md-4 text-center">
+                <input type="date" id="birthday">
+            </div>
+        </div>
+        <div class="row margin">
+            <div class="col">
+                <button class="buttonstyle" type="submit" id="myButton"></button>
+            </div>
         </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="scriptp1.js"></script>
     <script src="script2.js"></script>
 </body>
