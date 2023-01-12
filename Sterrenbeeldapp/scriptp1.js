@@ -4,6 +4,15 @@ let day = sessionStorage.getItem('birthday');
 console.log(year, name_user);
 document.getElementById('welcomeMessage').innerHTML = "<p>" + "Welcome, " + name_user + " " + "(" + year + ")" + "</p>";
 
+//CAT-IMAGE
+const catURL = "https://cataas.com";
+
+fetch("https://cataas.com/cat?json=true").then(
+  response => response.json()
+).then(data => {
+  document.getElementById("catImg").src= catURL + data.url;
+})
+
 function getZodiac(){
     //GET DATE
     var birthyear = sessionStorage.getItem('year')
